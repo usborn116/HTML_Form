@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin:0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url('assets/bball.jpg');
+    position: relative;
+    justify-content: stretch;
+    align-items: center;
+    width: 34%;
+    height: 100vh;
+    margin: 0;
+}
+
+img{
+    width: 50%;
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    color:darkred;
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    margin-top: 25vh;
+    letter-spacing: 1px;
+}
+
+#sllogo{
+    display: flex;
+    width:50%;
+    height: auto;
+    margin: 20px;
+}
+
+#caption{
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin-right:7px;
+    opacity: 1.2;
+}
+
+.intro{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 35px;
+    margin-top: 20%;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    width: 90%;
+}
+
+
+.formbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: flex-start;
+    height: 100vh;
+    width: 67%;
+    margin-left: 0px;
+    background-color: #ebeae8;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: #2b2b2b;
+    width: 100%;
+}
+
+.begin{
+    margin: 20px 0px;
+    font-size: 25px;
+    color: black;
+}
+
+.formfields {
+    display: flex;
+    flex-wrap: wrap;
+    width: 66vw;
+    height: auto;
+}
+
+#col1, #col2{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.field{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+input{
+    height: 20px;
+    padding-left: 5px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 3px 2px 2px lightblue;
+}
+
+input:invalid:not(:focus){
+    border: 1px solid red;
+    box-shadow: 3px 2px 2px lightcoral;
+}
+
+button{
+    background-color: #596D48;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px 40px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+}
+
+a:link{
+    text-decoration: none;
+    color: seagreen;
+}
+
+a:visited{
+    text-decoration: none;
+    color: purple
+}
+
+.requirements1, .requirements2{
+    opacity: 0;
+    overflow: hidden;
+    font-size: 15px;
+    color:darkred;
+}
+
+
+input:invalid:focus~.requirements1, input:invalid:focus~.requirements2 {
+    height: 100%;
+    opacity: 0.8;
+    overflow: hidden;
+}

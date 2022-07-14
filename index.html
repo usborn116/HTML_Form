@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Oswald&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <div class="images">
+        <div class="logo">
+            <img id='sllogo' src="./assets/pinpng.com-mgm-logo-png-872162.png">
+            <div id='caption'>Summer League</div>
+        </div>
+    </div>
+    <div class="formbox">
+        <div class="intro">This is a form to sign up to join the summer league trip to Las Vegas. Lots of NBA basketball will be enjoyed,
+            and you'll see the newest rookies showcase their skills.<br><br>Let us know if you'd like to come!</div>
+        <div class="form">
+        <form action="" method = "post">
+            <div class="begin">Let's Do This!</div>
+            <div class="formfields">
+                <div id="col1">
+                    <div class='field' id="first">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname">
+                    </div>
+                    <div class='field' id="email">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email">
+                    </div>
+                    <div class='field' id="pw">
+                    <label for="pw">Create Password</label>
+                    <input type="text" id="pw" required minlength="6" maxlength="20">
+                    <div class="requirements1">Please enter a password between 6 and 20 digits</div>
+                    </div>
+                </div>
+                <div id="col2">
+                    <div class='field' id="last">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname">
+                    </div>
+                    <div class='field' id="number">
+                    <label for="number">Phone Number</label>
+                    <input type="text" id="number">
+                    </div>
+                    <div class='field' id="pwconfirm">
+                    <label for="pwconfirm">Confirm Password</label>
+                    <input type="text" id="pwconfirm"  required minlength="6" maxlength="20">
+                    <div class="requirements2">Please enter a password between 6 and 20 digits</div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">Sign Up!</button>
+            </div>
+            <div class="already">Already have an account? <a href="https://google.com" target="_blank">Log In</a></div>
+        </form>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -5,6 +5,8 @@ body {
     margin:0;
     font-family: 'Oswald', sans-serif;
     font-size: 27px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .images{
@@ -68,10 +70,9 @@ img{
 .formbox {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    max-height: 100%;
     width: 67%;
     margin-left: 0px;
     background-color: #ebeae8;
@@ -79,6 +80,7 @@ img{
 
 .form {
     display: flex;
+    align-self: center;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -97,20 +99,12 @@ img{
 }
 
 .formfields {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     width: 66vw;
     height: auto;
 }
-
-#col1, #col2{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 .field{
     margin-bottom: 20px;
     display: flex;
